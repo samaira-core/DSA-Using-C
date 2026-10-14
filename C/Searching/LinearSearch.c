@@ -4,17 +4,14 @@ void readArray(int a[], int n)
 {
     int i;
     printf("Enter %d elements:\n", n);
-
     for(i = 0; i < n; i++)
     {
         scanf("%d", &a[i]);
     }
 }
-
 void linearSearch(int a[], int n, int x)
 {
     int i, found = 0;
-
     for(i = 0; i < n; i++)
     {
         if(a[i] == x)
@@ -24,13 +21,11 @@ void linearSearch(int a[], int n, int x)
             break;
         }
     }
-
     if(found == 0)
     {
         printf("Element not found");
     }
 }
-
 int main()
 {
     int a[50], n, x;

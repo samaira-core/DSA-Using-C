@@ -3,9 +3,7 @@
 void readArray(int a[], int n)
 {
     int i;
-
     printf("Enter %d sorted elements:\n", n);
-
     for(i = 0; i < n; i++)
     {
         scanf("%d", &a[i]);
@@ -16,7 +14,6 @@ void binarySearch(int a[], int n, int x)
 {
     int l = 0, r = n - 1, mid;
     int found = 0;
-
     while(l <= r)
     {
         mid = (l + r) / 2;
